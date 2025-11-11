@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Treatment Guidelines — Breast Cancer</title>
+  <style>
+    :root{
+      --accent:#2b6cb0; /* deep rose */
+      --muted:#555;
+      --card:#fff;
+      --glass: rgba(255,255,255,0.85);
+      --maxw:980px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial;color:#222;background: linear-gradient(180deg,#fbfbfc 0%, #ffffff 100%);-webkit-font-smoothing:antialiased}
+    header{background: linear-gradient(90deg,var(--accent), #d16fbf);color:white;padding:26px 18px;box-shadow: 0 6px 18px rgba(35,20,40,0.05)}
+    .container{max-width:var(--maxw);margin:20px auto;padding:0 18px}
+    h1{margin:0;font-size:1.45rem}
+    .subtitle{opacity:0.95;margin-top:8px;font-size:0.95rem}
+
+    .accordion{display:flex;flex-direction:column;gap:14px;margin-top:18px}
+    .panel{background:var(--card);border-radius:12px;padding:14px;border:1px solid rgba(10,10,10,0.03);box-shadow: 0 8px 20px rgba(20,15,25,0.02)}
+    .panel summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:8px;font-weight:700;color:var(--accent);background: linear-gradient(90deg, rgba(162,28,175,0.06), rgba(209,111,191,0.03));border:1px solid rgba(10,20,40,0.02)}
+    details[open] summary{background: linear-gradient(90deg, rgba(162,28,175,0.12), rgba(209,111,191,0.06));}
+    .panel .content{margin-top:10px;color:var(--muted);line-height:1.5}
+    ul{margin:10px 0 0 18px}
+    li{margin:8px 0}
+
+    .tabs{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+    .tab-btn{padding:8px 12px;border-radius:8px;border:1px solid rgba(10,20,40,0.05);background:white;cursor:pointer;font-weight:600;color:var(--accent)}
+    .tab-btn.active{background:linear-gradient(90deg,var(--accent),#d16fbf);color:white;border-color:transparent}
+    .table-wrap{margin-top:12px;overflow:auto;border-radius:8px;border:1px solid rgba(10,20,40,0.04);background:linear-gradient(180deg,#fff,#fff)}
+    table{width:100%;border-collapse:collapse;font-size:0.95rem}
+    th,td{padding:10px 12px;border-bottom:1px solid rgba(10,20,40,0.04);vertical-align:top}
+    th{background:rgba(10,20,40,0.03);text-align:left;font-weight:700}
+    .muted-note{font-size:0.9rem;color:#444;margin-top:8px}
+
+    .actions{display:flex;gap:8px;margin-top:12px}
+    button{padding:8px 12px;border-radius:8px;border:none;background:var(--accent);color:white;cursor:pointer}
+    button.ghost{background:transparent;border:1px solid rgba(10,20,40,0.06);color:var(--accent)}
+
+    footer{margin:24px 0 60px;color:#666;font-size:0.9rem}
+    @media (max-width:720px){header{padding:18px}h1{font-size:1.05rem}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Treatment Guidelines — Breast Cancer</h1>
+      <div class="subtitle">Sections: Early breast cancer • Planning & target delineation • Regional nodal irradiation • Dosimetric planning guidelines</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="accordion">
+
+      <!-- 1) General Principles of Planning and Target Delineation -->
+      <details class="panel" open>
+        <summary>General Principles of Planning and Target Delineation (CLICK HERE)</summary>
+        <div class="content">
+          <ul>
+            <li>Three-dimensional conformal radiation therapy (3D CRT) with appropriate compensation (i.e. field-in-field technique, mixed energy beams) providing homogeneous dose to the breast tissue is the standard technique for adjuvant radiation therapy for early stage breast cancer. The highest level of evidence supports hypofractionated whole breast irradiation.</li>
+            <li>A subsequent boost to the tumor bed (lumpectomy cavity) further reduces the risk of local recurrence, but may be omitted in low-risk patients. Boost radiation planning is most often performed using an en face electron beam, with beam energy selection based on the depth to tumor bed plus a margin, not extending beyond the anterior surface of the pectoralis muscles. For a deep tumor bed, mini-tangents can be considered.</li>
+            <li>Accelerated partial breast irradiation (APBI), although not yet the standard of care, is an acceptable alternative for select low-risk patients with unifocal disease.</li>
+          </ul>
+
+
+          <div class="muted-note">Additional important points:</div>
+          <ul>
+            <li>All patients should undergo mammogram at diagnosis. Additional imaging commonly includes ultrasound. MRI indications are limited for early-stage disease but images may be available in some patients — review available pre-operative imaging prior to radiation planning.</li>
+            <li>Image-guided biopsy confirms diagnosis. Lumpectomy (or segmental excision) and sentinel lymph node biopsy (SLNB) are recommended for early invasive disease. Pathology should ensure adequate margins (no tumor on ink for invasive; 2 mm for pure DCIS per SSO-ASTRO 2016 guidance).</li>
+            <li>For whole breast radiation planning, a CT with &lt;=3 mm slice thickness should be performed in the supine or prone position. For APBI, a CT slice thickness of 1.5–2 mm through the lumpectomy cavity may improve delineation.</li>
+            <li>For supine positioning, the patient should be positioned on a breast board with arms above the head. Deep inspiration breath hold (DIBH) should be considered for left-sided breast cancer to reduce heart dose. Patients with pendulous breasts may benefit from prone positioning.</li>
+            <li>Organs at risk should include the heart and lungs. The heart should be contoured superiorly to the bifurcation of the pulmonary artery and include the pericardium and epicardial fat (between heart muscle and pericardium). Consider contouring LAD and LV per published atlases.</li>
+          </ul>
+
+          <!-- Table Suggested target volumes for 3-D -->
+          <div style="margin-top:12px">
+            <strong> Suggested target volumes for 3-D treatment planning for early stage breast cancer</strong>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr><th style="width:28%">Target volumes</th><th>Definition and description</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Breast</strong></td>
+                    <td>Clinical reference is required for breast tissue delineation. Breast tissue may be wired or borders may be placed clinically at the time of CT. Contour should include all glandular breast tissues. Cranial border below head of clavicle and at insertion of second rib. Caudal border defined by loss of breast tissue. Medial border at sternal edge and should not cross midline. Lateral border defined by midaxillary line but depends on ptosis. Anterior border is the skin or a few millimeters from skin (for dose reporting) and posterior border is the pectoralis muscles and chest wall. Borders may extend slightly beyond these definitions to ensure adequate margin on the lumpectomy cavity.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Lumpectomy cavity</strong></td>
+                    <td>Seroma, surgical clips, and notable differences in glandular breast tissue should be included. Comparison to contralateral breast may be useful, particularly when fluid and/or surgical clips are not present. All imaging studies should be reviewed prior to planning to assist in delineating this volume. This volume should not extend outside of the breast tissue.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Lumpectomy CTV</strong></td>
+                    <td>Lumpectomy cavity with a 1.0–1.5 cm expansion. This volume should not extend outside of the body or into the pectoralis muscles and/or muscles of the chest wall.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Lumpectomy PTV</strong></td>
+                    <td>Lumpectomy CTV with a margin based on setup uncertainty and predicted patient motion (generally 0.5–1.0 cm). This volume may extend outside of the patient surface and into the pectoralis muscles and/or muscles of the chest wall. Adjustments may be necessary for dose-reporting purposes.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="muted-note">a For APBI only; for whole breast irradiation, the lumpectomy cavity alone is the target for boost.</div>
+          </div>
+
+        </div>
+      </details>
+
+      <!-- 2) Regional Lymph Node Irradiation -->
+      <details class="panel">
+        <summary>Regional Lymph Node Irradiation for Breast Cancer   (CLICK HERE) </summary>
+        <div class="content">
+          <ul>
+            <li>Patients undergo CT simulation in the treatment position with both arms extended above their head using breast board immobilization; IV contrast is optional.</li>
+            <li>In cases with an intact breast, borders of the breast and lumpectomy scar may be wired on the patient’s skin prior to scanning.</li>
+            <li>Patients are scanned from the cricoid through 5 cm below the clinically marked inferior port edge. The entirety of both lungs must be included.</li>
+            <li>The planning target volume (PTV) is defined as any breast tissue or chest wall, ipsilateral level I–III axillary lymph nodes, ipsilateral supraclavicular lymph nodes, ipsilateral interpectoral lymph nodes, and ipsilateral internal mammary lymph nodes. Bolus of 3 mm is used daily over chest wall for VMAT/IMRT plans; thicker bolus may be applied for inflammatory breast cancer.</li>
+          </ul>
+
+          <div style="margin-top:12px">
+            <strong>Table 1: Suggested target volumes at the gross disease region</strong>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th style="width:32%">Target volumes</th><th>Definition and description</th></tr></thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Clinical target volume (CTV)</strong></td>
+                    <td>Breast tissue or chest wall as defined by RADCOMP breast atlas, ipsilateral regional lymph nodes, interconnecting lymphatic drainage routes, breast prosthesis (if present) and chest wall musculature/skin to be determined at risk for microscopic disease.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Planning target volume (PTV)</strong></td>
+                    <td>A margin of 3–5 mm medially, 5–10 mm laterally, and 3–5 mm posteriorly (except IMN which should be 0 mm margin posteriorly), and 5–10 mm superiorly/inferiorly/anteriorly (to include skin surface) will be added to the CTV. The amount of lung can be trimmed per physician discretion.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Dosimetric Tabs -->
+          <div style="margin-top:14px">
+            <strong>Dosimetric planning guidelines</strong>
+            <div class="tabs" role="tablist" aria-label="Dosimetric tabs">
+              <button class="tab-btn active" data-tab="dos-vmat">Table 1: VMAT dosimetric guidelines (50Gy/25Fr) </button>
+              <button class="tab-btn" data-tab="dos-imrt">Table 2: IMRT/VMAT dosimetric guidelines (50Gy/25Fr) </button>
+            </div>
+
+            <div class="table-wrap" id="dos-vmat" style="display:block">
+              <table>
+                <thead>
+                  <tr><th style="width:30%">Structure</th><th>Parameter</th><th>Objective</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td rowspan="3"><strong>PTV</strong></td><td>D95%</td><td>&ge;95%</td></tr>
+                  <tr><td>V95%</td><td>&ge;95%</td></tr>
+                  <tr><td>D05%</td><td>&le;110%</td></tr>
+                  <tr><td><strong>Internal mammary node (IMN)</strong></td><td>D95%</td><td>&ge;100%</td></tr>
+
+                  <tr><td rowspan="3"><strong>Ipsilateral lung</strong></td><td>V20Gy</td><td>&le;33%</td></tr>
+                  <tr><td>V10Gy</td><td>&le;68%</td></tr>
+                  <tr><td>Mean Gy</td><td>&le;20 Gy</td></tr>
+
+                  <tr><td><strong>Contralateral lung</strong></td><td>V20Gy</td><td>&le;25%</td></tr>
+                  <tr><td><strong>Heart</strong></td><td>V25Gy / Mean Gy</td><td>&le;25% / &le;9 Gy (or &le;8 Gy)</td></tr>
+                  <tr><td><strong>LAD</strong></td><td>Dmax</td><td>&le;50 Gy</td></tr>
+                  <tr><td><strong>Contralateral intact breast</strong></td><td>Mean Gy</td><td>&le;5 Gy</td></tr>
+                  <tr><td><strong>Contralateral implant</strong></td><td>Mean Gy</td><td>&le;8 Gy</td></tr>
+                  <tr><td><strong>Esophagus</strong></td><td>Dmax</td><td>&le;50 Gy</td></tr>
+                  <tr><td><strong>Thyroid</strong></td><td>Mean Gy</td><td>&le;20 Gy</td></tr>
+                  <tr><td><strong>Brachial plexus</strong></td><td>Dmax</td><td>&le;55 Gy</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="table-wrap" id="dos-imrt" style="display:none">
+              <table>
+                <thead>
+                  <tr><th style="width:28%">Structure</th><th>Parameter</th><th>Objective</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td rowspan="3"><strong>PTV</strong></td><td>D95%</td><td>&ge;95%</td></tr>
+                  <tr><td>V95%</td><td>&ge;95%</td></tr>
+                  <tr><td>D05%</td><td>&le;110%</td></tr>
+
+                  <tr><td><strong>Inside implant PVT</strong></td><td>D95%</td><td>&le;120%</td></tr>
+                  <tr><td><strong>Internal mammary node (IMN)</strong></td><td>D95%</td><td>&ge;90%</td></tr>
+
+                  <tr><td rowspan="3"><strong>Ipsilateral lung</strong></td><td>V20Gy</td><td>30% (33%) Non-DIBH; 27% (30%) DIBH</td></tr>
+                  <tr><td>V10Gy</td><td>65% (68%) Non-DIBH; 60% (63%) DIBH</td></tr>
+                  <tr><td>Mean Gy</td><td>18 Gy</td></tr>
+
+                  <tr><td><strong>Contralateral lung</strong></td><td>V20Gy</td><td>5%</td></tr>
+                  <tr><td><strong>Heart</strong></td><td>V25Gy—left breast</td><td>3%</td></tr>
+                  <tr><td><strong>Right breast</strong></td><td>Mean Gy</td><td>0.5%</td></tr>
+                  <tr><td><strong>Dmax</strong></td><td></td><td>50 Gy</td></tr>
+                  <tr><td><strong>Mean Gy — left breast and IMN</strong></td><td></td><td>7 Gy (&nbsp;8 Gy)</td></tr>
+                  <tr><td><strong>Left anterior descending artery (LAD)</strong></td><td>Dmax</td><td>25 Gy (35 Gy)</td></tr>
+                  <tr><td><strong>Contralateral intact breast</strong></td><td>Mean Gy</td><td>6 Gy</td></tr>
+                  <tr><td><strong>Contralateral implant</strong></td><td>Mean Gy</td><td>8 Gy</td></tr>
+                  <tr><td><strong>Esophagus</strong></td><td>Dmax</td><td>35 Gy (40 Gy)</td></tr>
+                  <tr><td><strong>Thyroid</strong></td><td>Mean Gy</td><td>20 Gy</td></tr>
+                  <tr><td><strong>Brachial plexus</strong></td><td>Dmax</td><td>55 Gy</td></tr>
+                  <tr><td><strong>Liver (for right side)</strong></td><td>Mean Gy</td><td>8 Gy (10 Gy)</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="muted-note" style="margin-top:8px">DIBH = deep inspiratory breath hold. Use these dosimetric criteria as planning goals; small variations may be acceptable per clinical judgement.</div>
+
+          </div>
+
+        </div>
+      </details>
+
+      <!-- 3) RADCOMP ATLAS — BREAST -->
+      <details class="panel">
+        <summary>RADCOMP ATLAS — BREAST    (CLICK HERE) </summary>
+        <div class="content">
+         
+          <div class="table-wrap" style="margin-top:10px">
+            <table>
+              <thead><tr><th style="width:28%">Structure</th><th>Description</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><strong>Chest Wall</strong></td>
+                  <td>cranial inferior to head of clavicle; caudal approximately 1–2 cm below breast tissue (or prior breast tissue); anterior — skin; posterior up to but not including ribs; medial to sternum; lateral to mid-axillary line. Note: for cases not including level I & II axilla, chest wall may extend more posterior.</td>
+                </tr>
+                <tr>
+                  <td><strong>IMN</strong></td>
+                  <td>cranial at inferior supraclavicular volume or caudal to head of clavicle; caudal at cranial border of 4<sup>th</sup> rib; anterior at posterior chest wall; posterior to pleura (include fat but no lung); medial at sternum; lateral to include any visible fat.</td>
+                </tr>
+                <tr>
+                  <td><strong>Level 1 LN</strong></td>
+                  <td>cranial should include axillary vessels at lateral edge of pectoralis minor & below the humeral head; caudal at the point where the pectoralis major inserts on the ribs (difficult to see on CT; requires clinical judgment; around 4<sup>th</sup>–5<sup>th</sup> rib); anterior at posterior pectoralis major or skin; posterior at anterior border of subscapularis and latissimus dorsi; medial at lateral border of pectoralis minor/level II axilla; lateral at latissimus dorsi—at line connecting latissimus dorsi and deltoid or up to skin.</td>
+                </tr>
+                <tr>
+                  <td><strong>Level 2 LN</strong></td>
+                  <td>cranial at or below pectoralis minor insertion on coracoid; caudal at obliteration of fat space between pectoralis major and pectoralis minor or chest wall (may include pectoralis minor muscle for ease of contouring); anterior at posterior pectoralis major; posterior at chest wall; medial at medial border of pectoralis minor/level III axilla; lateral at level I/lateral border of pectoralis minor.</td>
+                </tr>
+                <tr>
+                  <td><strong>Level 3 LN</strong></td>
+                  <td>cranial at or below pectoralis minor insertion on coracoid; caudal at obliteration of fat space between pectoralis major and chest wall; anterior at posterior pectoralis major; posterior at chest wall; medial at obliteration of fat space and the supraclavicular volume; lateral at level 2/medial border of pectoralis minor.</td>
+                </tr>
+                <tr>
+                  <td><strong>Posterior neck LN</strong></td>
+                  <td>optional volume based on relapse patterns; may be drawn contiguously as part of the supraclavicular volume or separately. Cranial border should be below the cricoid; caudal at obliteration of fat space; anterior at supraclavicular volume; posterior at trapezius; medial at longus colli; lateral at platysma, level 2/3 or scapula.</td>
+                </tr>
+                <tr>
+                  <td><strong>Supraclavicular LN</strong></td>
+                  <td>cranial border below the cricoid; caudal border should connect to IMN (includes subclavian vein); anterior at dorsal surface of sternocleidomastoid, clavicle or strap muscles; posterior at scalenus (anterior & medial), levator scapulae, posterior edge of sternocleidomastoid (or meeting posterior neck volume) & vascular region — no more posterior than pleura; medial at medial edge of carotid artery; lateral at lateral edge of sternocleidomastoid, clavicle & connecting to level III axilla.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </details>
+
+    </div>
+   </main>
+
+  <script>
+    // Tabs switching
+    document.querySelectorAll('.tab-btn').forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+        btn.classList.add('active');
+        const target = btn.getAttribute('data-tab');
+        document.querySelectorAll('#dos-vmat, #dos-imrt, #table-gross, #table-subclinical').forEach(el=>{ if(el) el.style.display='none' });
+        const t = document.getElementById(target);
+        if(t) t.style.display = 'block';
+      });
+    });
+
+    // auto-collapse other details when one opens
+    document.querySelectorAll('details').forEach(d=>{
+      d.addEventListener('toggle', ()=>{
+        if(d.open){
+          document.querySelectorAll('details').forEach(other=>{ if(other !== d) other.open = false; });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
